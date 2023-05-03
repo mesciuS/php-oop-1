@@ -2,7 +2,7 @@
 class Movie {
     public $title;
     public $cast;
-    public $genre;
+    public $genre = array();
     public $year;
     public $duration;
 

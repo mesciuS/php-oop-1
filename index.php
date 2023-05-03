@@ -33,7 +33,7 @@ require_once './db.php';
                     <tr>
                         <td><?php echo $singleMovie->title?></td>
                         <td><?= $singleMovie->cast->getFullCast() ?></td>
-                        <td><?= $singleMovie->genre?></td>
+                        <td><?= implode(",", $singleMovie->genre)?></td>
                         <td><?= $singleMovie->year?></td>
                         <td><?= $singleMovie->duration?>min.</td>
                     </tr>
