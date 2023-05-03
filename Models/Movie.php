@@ -6,7 +6,7 @@ class Movie {
     public $year;
     public $duration;
 
-    function __construct(string $title, Cast $cast, string $genre, int $year, int $duration)
+    function __construct(string $title, Cast $cast, array $genre, int $year, int $duration)
     {
         $this->title = $title;
         $this->cast = $cast;

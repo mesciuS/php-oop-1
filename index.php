@@ -1,16 +1,8 @@
 <?php
 require_once './Models/Movie.php';
 require_once './Models/Cast.php';
-$firstMovie = new Movie("Monella", new Cast("Anna Ammirati", "Max Parodi", "Patrick Mower"), "Comedy", 1998, 120);
-$secondMovie = new Movie("Barry Lyndon", new Cast("Ryan O'Neal", "Marisa Berenson", "Patrick Magee"), "Drama", 1975, 184);
-// var_dump($firstMovie);
-// var_dump($secondMovie);
+require_once './db.php';
 
-$movies = [
-    $firstMovie,
-    $secondMovie
-];
-// var_dump($movies);
 
 ?>
 <!DOCTYPE html>
@@ -51,6 +43,9 @@ $movies = [
         </tbody>
 
     </table>
+    <?php
+    include './Views/partials/footer.php';
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
